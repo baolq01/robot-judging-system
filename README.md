@@ -1,12 +1,12 @@
 # 快速开始
 * 对于本系统，必须安装下列所有库：
-'''bash'''
+```bash```
 pip install -r requirements.txt
-'''
+```
 * 在refsys的recv_end.py中，对系统颜色进行修改，然后： 
-'''bash'''
+```bash```
 pyinstaller --onefile --collect-all PyQt5 recv_end.py
-'''
+```
 * 之后可以将recv_end.exe和pyqt需要的本地dll文件一起拷贝入目标电脑，可以通过本地电脑运行send_end
 ## 修改网络配置
 可以查询自己recv_end所在电脑的局域网IP，并在send_end.py程序头进行更改。
@@ -24,6 +24,7 @@ refsys：主开发文件，生成recv_end不同色方需要的不同.exe
 recv_end-red:红方分数显示、二维码显示，通过.exe直接运行
 recv_end-blue:蓝方分数显示、二维码显示，通过.exe直接运行
 ## 项目文件结构
+```
   README.md
 ├─recv_end-blue
 │  │  0.png
@@ -108,6 +109,7 @@ recv_end-blue:蓝方分数显示、二维码显示，通过.exe直接运行
         │  recv_end.exe
         │
         └─platforms
+```
 ## 项目实现方式
 本项目的send_end\recv_end-red\recv_end-blue 各使用了一台电脑，由主裁操纵send_end，借助局域网UDP通信向red、blue的电脑传递比赛剩余时间、赏金随机数、加分指令等信号，在接收端自主计算比赛得分并生成二维码随机数。
 本项目的端口UI和配套进程借助PyQT开发，实现了进程调度需要。

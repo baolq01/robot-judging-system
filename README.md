@@ -1,10 +1,10 @@
 # 快速开始
 * 对于本系统，必须安装下列所有库：
-```bash```
+```
 pip install -r requirements.txt
 ```
 * 在refsys的recv_end.py中，对系统颜色进行修改，然后： 
-```bash```
+```
 pyinstaller --onefile --collect-all PyQt5 recv_end.py
 ```
 * 之后可以将recv_end.exe和pyqt需要的本地dll文件一起拷贝入目标电脑，可以通过本地电脑运行send_end

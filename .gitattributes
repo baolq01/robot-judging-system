@@ -1,3 +1,6 @@
+.exe filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.pkg filter=lfs diff=lfs merge=lfs -text
 refsys/dist/recv_end.exe filter=lfs diff=lfs merge=lfs -text
 /recv_end-blue/recv_end.exe filter=lfs diff=lfs merge=lfs -text
 /recv_end-red/recv_end.exe filter=lfs diff=lfs merge=lfs -text
